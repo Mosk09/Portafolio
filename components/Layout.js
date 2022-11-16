@@ -25,7 +25,7 @@ export default function Layout({ children }) {
       <main className="container py-4">{children}</main>
       <footer className="bg-dark text-light text-center">
         <div className="container p-4">
-          <h1>&copy; Leo Mosconi Portafolio</h1>
+          <h1>&copy; Leo Mosconi Porfolio</h1>
           <p> 2021- {new Date().getFullYear()}</p>
           <p>All rights Reserverd</p>
         </div>

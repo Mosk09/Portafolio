@@ -6,7 +6,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
           <Link className="navbar-brand" href="/">
-            Portafolio
+            Porfolio
           </Link>
           <div
             className="d-flex justify-content-end"
