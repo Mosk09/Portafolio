@@ -17,16 +17,16 @@ export default function Index() {
                 <h1>Leo Mosconi</h1>
                 <h3>FullStack Developer</h3>
                 <p>
-                  ¿Quién soy? Desarrollador Full Stack con orientación a
-                  Back-end con experiencia en la creación de páginas web e
-                  implementación de librerías nuevas. ¿Por qué yo? Deportista
-                  profesional que hace años vengo estudiando el mundo
-                  tecnológico. creo que el futuro es muy cambiante lo cual
-                  decidí meterme de lleno con el desarrollo informático, con mi
-                  espíritu competitivo y de esfuerzo constante que me dio el
-                  deporte puedo decir que siempre voy para adelante y me gustan
-                  los retos. siempre dispuesto a aprender y mejorar todo lo que
-                  se pueda para un mejor rendimiento en lo laboral. .
+                  ¿Quién soy? Desarrollador Full Stack con experiencia en la
+                  creación de páginas web e implementación de librerías nuevas.
+                  ¿Por qué yo? Deportista profesional que hace años vengo
+                  estudiando el mundo tecnológico. creo que el futuro es muy
+                  cambiante lo cual decidí meterme de lleno con el desarrollo
+                  informático, con mi espíritu competitivo y de esfuerzo
+                  constante que me dio el deporte puedo decir que siempre voy
+                  para adelante y me gustan los retos. siempre dispuesto a
+                  aprender y mejorar todo lo que se pueda para un mejor
+                  rendimiento en lo laboral. .
                 </p>
                 <a href="/contratame">Contratame</a>
               </div>
@@ -80,7 +80,7 @@ export default function Index() {
           <div className="card card-body bg-dark">
             <div className="row">
               <div className="col-md-12">
-                <h1 className="text-center text-light">Portafolio</h1>
+                <h1 className="text-center text-light">Porfolio</h1>
               </div>
               {experiences.map(({ title, sub, img, github }, i) => (
                 <div className="col-md-4 p-2" key={i}>
