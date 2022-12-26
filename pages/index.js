@@ -28,7 +28,7 @@ export default function Index() {
                   aprender y mejorar todo lo que se pueda para un mejor
                   rendimiento en lo laboral. .
                 </p>
-                <a href="/contratame">Contratame</a>
+                 <a href="/CV Nuevo.pdf" download="CV Leonardo Mosconi">Descarga CV</a>
               </div>
             </div>
           </div>
