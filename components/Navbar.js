@@ -14,14 +14,14 @@ export default function Navbar() {
           >
             <ul className="navbar-nav ml-auto d-flex flex-row ">
               <li className="nav-item px-2">
-                <Link className="nav-link" href="/LinkedIn">
+                <a className="nav-link" href="https://www.linkedin.com/in/leo-mosconi-09ab27230/">
                   LinkedIn
-                </Link>
+                </a>
               </li>
               <li className="nav-item px-2">
-                <Link className="nav-link" href="/github">
+                <a className="nav-link" href="https://github.com/Mosk09">
                   Github
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

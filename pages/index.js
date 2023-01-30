@@ -17,18 +17,17 @@ export default function Index() {
                 <h1>Leo Mosconi</h1>
                 <h3>FullStack Developer</h3>
                 <p>
-                  ¿Quién soy? Desarrollador Full Stack con experiencia en la
-                  creación de páginas web e implementación de librerías nuevas.
-                  ¿Por qué yo? Deportista profesional que hace años vengo
-                  estudiando el mundo tecnológico. creo que el futuro es muy
-                  cambiante lo cual decidí meterme de lleno con el desarrollo
-                  informático, con mi espíritu competitivo y de esfuerzo
-                  constante que me dio el deporte puedo decir que siempre voy
-                  para adelante y me gustan los retos. siempre dispuesto a
-                  aprender y mejorar todo lo que se pueda para un mejor
-                  rendimiento en lo laboral. .
+                  Desarrollador entusíasta con experiencia en bases de dates,
+                  frontend y back-end. Conocedor de los procesos de
+                  codificación. prueba y depuración. Equipado con un conjunto de
+                  habilidades diversa y prometedor. Competente en una variedad
+                  de tecnologlas mencionadas mas arriba. Capaz de
+                  autogestionarse de manera efectiva durante proyectos
+                  independientes. así como colaborar en un entorno de equipo.
                 </p>
-                <a href="/contratame">Contratame</a>
+                <a href="/CV Nuevo.pdf" download="CV Leonardo Mosconi">
+                  Descarga CV
+                </a>
               </div>
             </div>
           </div>
@@ -40,9 +39,22 @@ export default function Index() {
           <div className="card bg-ligth h-100">
             <div className="card-body ">
               <h1>Skills</h1>
-              {skills.map(({ skill, percentage }, i) => (
+              {skills.map(({ skill, percentage, image }, i) => (
                 <div key={i}>
-                  <h5>{skill}</h5>
+                  <div>
+                    <img
+                      src={image}
+                      key={i}
+                      style={{
+                        margin: "3px",
+                        width: "60px",
+                        height: "60px",
+                        backgroundColor: "transparent",
+                      }}
+                      alt={skill}
+                    />
+                    <span> {skill}</span>
+                  </div>
                   <div className="progress">
                     <div
                       className="progress-bar"
