@@ -71,7 +71,7 @@ export const experiences = [
     sub: "Tabla Contable",
     description:
       "Tabla de contaduria para agregar, quitar y modificar ingresos o egresos de dinero con log in y register",
-    img: "porfolio2.png",
+      src:"https://www.youtube.com/embed/dbjTNLrMG9E",
     github: "https://github.com/Mosk09/Alkemy.git",
   },
   {
@@ -89,7 +89,8 @@ export const experiences = [
     sub: "Ecommerce",
     description:
       "Proyecto final de Henry el cual es un Ecomerce con muchas funciones y tecnologias, desde panel de admin, base de datos, panel de usuario, registro con google hasta pagos por paypal carrito de compras y mucho mas. algunas de las  tecnologias usadas, MongoDB, Redux, React, Express, Moongoose, JS, etc",
-    img: "proyectofinal.png",
+    src:"https://www.youtube.com/embed/v96dEr5_-UU",
     github: "https://github.com/Mosk09/fullstackstore",
   }
 ];
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dbjTNLrMG9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

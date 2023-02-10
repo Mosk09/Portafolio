@@ -25,7 +25,7 @@ export default function Index() {
                   autogestionarse de manera efectiva durante proyectos
                   independientes. así como colaborar en un entorno de equipo.
                 </p>
-                <a href="/CV Nuevo.pdf" download="CV Leonardo Mosconi">
+                <a href="/CV Leo Mosconi.pdf" download="CV Leonardo Mosconi">
                   Descarga CV
                 </a>
               </div>
@@ -92,13 +92,15 @@ export default function Index() {
           <div className="card card-body bg-dark">
             <div className="row">
               <div className="col-md-12">
-                <h1 className="text-center text-light">Porfolio</h1>
+                <h1 className="text-center text-light">PROYECTOS</h1>
               </div>
-              {experiences.map(({ title, sub, img, github }, i) => (
+              {experiences.map(({ title, sub,img, src, github }, i) => (
+             
                 <div className="col-md-4 p-2" key={i}>
                   <div className="card h-100 d-inline-block">
-                    <div className="overflow">
-                      <img className=" card-img-top" src={`/${img}`} alt="" />
+                    <div className="">
+                      {src?<iframe width="400" height="265" src={src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>:<img className="card-img-top" src={`/${img}`} alt="" />
+                      }                     
                     </div>
                     <div className="card-body">
                       <h3>{title}</h3>

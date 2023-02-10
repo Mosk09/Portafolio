@@ -10,3 +10,8 @@
   transform: scale(1.8);
 }
 
+.card-img-top{
+  width: 400px;
+  height: 265px;
+  object-fit: cover;
+}
