@@ -76,11 +76,11 @@ export default function Index() {
             <div className="row " style={{flexWrap:"wrap"}}>
                 <h1 className="text-center text-light">PROYECTOS</h1>
               </div>
-              <div className="d-flex justify-content-center"style={{flexWrap:"wrap"}}>
+              <div className="contenedor d-flex justify-content-center"style={{flexWrap:"wrap"}}>
               {experiences.map(({ title, sub, img, src, github }, i) => (
-                  <div className="m-2 text-center" key={i} style={{width:"250px", height:"400"}}>
+                  <div className="carta m-2 text-center" key={i} style={{width:"300px", height:"400"}}>
                     <div className="">       
-                        <img style={{width:"250px"}} src={`/${img}`} alt="" />                                             
+                        <img className="imagenCarta" src={`/${img}`} alt="" />                                             
                     </div>
                  
                       <h3>{title}</h3>
