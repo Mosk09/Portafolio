@@ -23,6 +23,11 @@ export default function Navbar() {
                   Github
                 </a>
               </li>
+              <li className="nav-item px-2">
+                <a className="nav-link" href="#proyectos">
+                  Proyectos
+                </a>
+              </li>
             </ul>
           </div>
         </div>

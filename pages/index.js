@@ -25,7 +25,7 @@ export default function Index() {
                   autogestionarse de manera efectiva durante proyectos
                   independientes. así como colaborar en un entorno de equipo.
                 </p>
-                <a href="/CV Leo Mosconi.pdf" download="CV Leonardo Mosconi">
+                <a href="/CV.pdf" download="CV">
                   Descarga CV
                 </a>
               </div>
@@ -34,42 +34,26 @@ export default function Index() {
         </div>
       </header>
       {/* section 2 */}
-      <div className="row py-2 px-3">
-        <div className="col-md-4   ">
-          <div className="card bg-ligth h-100">
-            <div className="card-body ">
-              <h1>Skills</h1>
-              {skills.map(({ skill, percentage, image }, i) => (
-                <div key={i}>
-                  <div>
-                    <img
-                      src={image}
-                      key={i}
-                      style={{
-                        margin: "3px",
-                        width: "60px",
-                        height: "60px",
-                        backgroundColor: "transparent",
-                      }}
-                      alt={skill}
-                    />
-                    <span> {skill}</span>
-                  </div>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      style={{ width: `${percentage}%` }}
-                    ></div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+      <div className="col-md-12 d-flex-column  text-center">
+      <h1>Skills</h1>
+        <div className="d-flex justify-content-center" style={{flexWrap:"wrap"}}>
+          {skills.map(({ skill, image }, i) => (
+            <img
+              src={image}
+              key={i}
+              style={{
+                margin: "10px",
+                width: "90px",
+                height: "90px",
+                backgroundColor: "transparent",
+              }}
+              alt={skill}
+            />
+          ))}
         </div>
-        <div className="col-md-8  px-3 ">
+        <div className="col-md-12 my-4">
           <div className="card bg-ligth h-100 d-inline-block">
-            <div className="card-body ">
+            <div className="card-body text-start">
               <h1>Experiencia</h1>
               <ul>
                 {experiences.map(({ title, date, description }, i) => (
@@ -87,33 +71,27 @@ export default function Index() {
         </div>
       </div>
       {/* porfolio */}
-      <div className="row">
-        <div className="col-md-12">
-          <div className="card card-body bg-dark">
-            <div className="row">
-              <div className="col-md-12">
+   
+              <div className="col-md-12" id="proyectos">
+            <div className="row " style={{flexWrap:"wrap"}}>
                 <h1 className="text-center text-light">PROYECTOS</h1>
               </div>
-              {experiences.map(({ title, sub,img, src, github }, i) => (
-             
-                <div className="col-md-4 p-2" key={i}>
-                  <div className="card h-100 d-inline-block">
-                    <div className="">
-                      {src?<iframe width="400" height="265" src={src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>:<img className="card-img-top" src={`/${img}`} alt="" />
-                      }                     
+              <div className="d-flex justify-content-center"style={{flexWrap:"wrap"}}>
+              {experiences.map(({ title, sub, img, src, github }, i) => (
+                  <div className="m-2 text-center" key={i} style={{width:"250px", height:"400"}}>
+                    <div className="">       
+                        <img style={{width:"250px"}} src={`/${img}`} alt="" />                                             
                     </div>
-                    <div className="card-body">
+                 
                       <h3>{title}</h3>
+                      {src && <a href={src}>Video </a>}
                       <p>{sub}</p>
                       <a href={github}>Github</a>
                     </div>
-                  </div>
-                </div>
+            
               ))}
-            </div>
-          </div>
-        </div>
-      </div>
+              </div>
+            </div> 
     </Layout>
   );
 }

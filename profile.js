@@ -32,6 +32,11 @@ export const skills = [
   {
     skill: "Postgress",
     percentage: 50,
+    image:"postman.png"
+  },
+  {
+    skill: "Postman",
+    percentage: 50,
     image:"postgress.png"
   },
   {
@@ -72,6 +77,7 @@ export const experiences = [
     description:
       "Tabla de contaduria para agregar, quitar y modificar ingresos o egresos de dinero con log in y register",
       src:"https://www.youtube.com/embed/dbjTNLrMG9E",
+      img:"porfolio2.png",
     github: "https://github.com/Mosk09/Alkemy.git",
   },
   {
@@ -87,6 +93,7 @@ export const experiences = [
     title: "TheFullStackStore",
     date: "10/2022",
     sub: "Ecommerce",
+    img:"proyectofinal.png",
     description:
       "Proyecto final de Henry el cual es un Ecomerce con muchas funciones y tecnologias, desde panel de admin, base de datos, panel de usuario, registro con google hasta pagos por paypal carrito de compras y mucho mas. algunas de las  tecnologias usadas, MongoDB, Redux, React, Express, Moongoose, JS, etc",
     src:"https://www.youtube.com/embed/v96dEr5_-UU",
